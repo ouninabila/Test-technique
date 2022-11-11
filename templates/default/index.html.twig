@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <h1>Fioulmarket - Test</h1>
+
+
+    {% for image in images %}
+
+        <img src="{{ image }}" title="{{ image }}"/>
+
+    {% endfor %}
+
+
+    <div class="navigation text-center">
+        {{ knp_pagination_render(images) }}
+    </div>
+
+
+{% endblock %}
