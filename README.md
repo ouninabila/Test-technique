@@ -5,6 +5,7 @@ test-dev
 
 Pratique : 
 1. Revoir complètement la conception du code (découper le code afin de pouvoir ajouter de nouveaux flux simplement) :
+
 Ma proposition est d'ajouter un service HomeService qui va traiter consommer le flux rss et l'api New Api avec le http client 
 puis formater le contenu de la réponse du flux rss en  SimpleXMLElement afin de récupérer l'url des images et  en json  pour récupérer les url des images du New Api
 Puis dans HomeController on va utiliser ce service pour afficher les images dans le homepage et à l'aide du bundle knp-paginator-bundle on affiche chaque image dans une page
